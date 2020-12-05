@@ -1,0 +1,217 @@
+/* playfair-display-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/playfair-display-v21-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/playfair-display-v21-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/playfair-display-v21-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/playfair-display-v21-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/playfair-display-v21-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/playfair-display-v21-latin_cyrillic-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  }
+  /* playfair-display-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/playfair-display-v21-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/playfair-display-v21-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/playfair-display-v21-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/playfair-display-v21-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/playfair-display-v21-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/playfair-display-v21-latin_cyrillic-500.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  }
+  /* playfair-display-900 - latin_cyrillic */
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/playfair-display-v21-latin_cyrillic-900.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/playfair-display-v21-latin_cyrillic-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/playfair-display-v21-latin_cyrillic-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/playfair-display-v21-latin_cyrillic-900.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/playfair-display-v21-latin_cyrillic-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/playfair-display-v21-latin_cyrillic-900.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  }
+
+html{
+    font-size: 16px;
+
+}
+
+
+body, *, *::before, *::after{
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('../img/фон.jpeg');
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+}
+
+a{
+  text-decoration: none;
+}
+/* ul, ol, li{
+  list-style: none;
+} */
+img{
+max-width: 100%;
+height: auto;
+}
+
+h3{
+  text-align: center;
+}
+
+.main-body{
+  width: 950px;
+  margin: 5px auto;
+  background-color: white;
+  padding-top: 10px;
+}
+
+/* header start */
+header h2>a{
+  margin: 10px 0 0 20px ;
+  color: #AE558B;
+  font-family: 'Georgia', Arial Black, Georgia, serif;
+  font-weight: bold;
+}
+header p{
+  margin-left: 20px;
+}
+/* header end */
+
+/* box start */
+.box{
+  display: flex;
+  padding-top: 15px;
+  flex-wrap: wrap;
+}
+.side-bar{
+  flex-basis: 200px;
+  
+}
+nav{
+  margin-bottom: 50px;
+}
+main{
+  flex-basis: 700px;
+}
+.menu{
+  margin-left: 10px;
+  list-style: none;
+}
+.menu li{
+  width: 180px;
+  border-bottom: 1px solid grey;
+  padding: 5px 0 1px 1px;
+
+}
+.menu a{
+  color: black;
+  transition: color 0.6s;
+  font-size: 14px;
+}
+.menu a:hover{
+color: blue;
+}
+
+main p{
+  text-align: justify;
+}
+.image{
+  margin: 30px auto;
+  width: 395px;
+  display: block;
+
+}
+/* box end  */
+.slider{
+  position: relative;
+  width: 100%;
+}
+#slides, .slide{
+  width: 180px;
+  height: 60px;
+}
+.slide a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#slides{
+  position: relative;
+  top: 0;
+  list-style: none;
+
+}
+.slide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  background-size: 180px 60px;
+
+}
+.show{
+  opacity: 1;
+  z-index: 2;
+
+}
+.slide:nth-of-type(1){
+  background-image: url("../img/виставки1.png");
+}
+.slide:nth-of-type(2){
+  background-image: url("../img/новини.png");
+}
+.slide:nth-of-type(3){
+  background-image: url("../img/конкурси.png");
+}
+
+.form-login{
+  width: 180px;
+  min-height: 200px;
+  margin: 50px auto;
+}
+.form-login__input{
+  margin: 10px 0;
+}
+.button-submit{
+  border-radius: 5px;
+  width: 80px;
+  height: 25px;
+}
+.form-reg{
+  list-style: none;
+
+}
+.form-reg>li{
+  margin-top: 5px;
+  
+}
+.form-reg__item, .form-reg__reg{
+font-size: 0.9rem;
+}
+
+.form-reg__item{
+  color: #5f2046;
+
+}
+.form-reg__reg{
+  color: #e70027;
+}
